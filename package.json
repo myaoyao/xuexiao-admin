@@ -23,6 +23,7 @@
     "node-inspector": "^0.12.8"
   },
   "devDependencies": {
+    "jade": "^1.11.0",
     "jsonwebtoken": "^7.3.0"
   }
 }

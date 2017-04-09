@@ -3,6 +3,6 @@
  */
 
 var mongoose = require("mongoose"); //引入mongoose
-var db=mongoose.connect('mongodb://localhost/zw');
+var db=mongoose.connect('mongodb://localhost/school');
 
 module.exports = db;

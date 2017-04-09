@@ -13,7 +13,7 @@ var addUser= require("../controller/admin/addUser");
 var addArticle = require("../controller/admin/addArticle");
 
 
-var url="/rest/admin/";
+var url="/rest/";
 module.exports = function (app) {
     app.get('/admin', admin);
     app.get(url+'index', index);
@@ -21,8 +21,8 @@ module.exports = function (app) {
     app.get(url+'getOneArticle', getOneArticle);
 
 
-    app.post(url+'login', login);
-    app.post(url+'addUser', addUser);
+    app.post(url+'user/login', login);
+    app.post(url+'user/addUser', addUser);
     app.post(url+'addArticle', addArticle);
 };
 

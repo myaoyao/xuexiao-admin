@@ -21,7 +21,7 @@ module.exports = function (req, res) {
             if (err) {
                 res.json(zw.getState(501, err))
             } else {
-                if (docs.errors) {
+                if (!docs||docs.errors) {
                     res.json(zw.getState(402));
                 } else {
                     var token=jwt.sign({ foo: docs._doc._id.id, iat: Date.now()+(1000*60*60) },"zw");
