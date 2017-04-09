@@ -1,0 +1,28 @@
+{
+  "name": "express-blog",
+  "version": "1.0.0",
+  "description": "express blog zw",
+  "main": "app.js",
+  "scripts": {
+    "mongod": "mongod",
+    "mongo": "mongo",
+    "start": "supervisor --debug  ./app",
+    "debug": "node-inspector",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "fuck"
+  ],
+  "author": "zhaowei",
+  "license": "ISC",
+  "dependencies": {
+    "blueimp-md5": "^2.7.0",
+    "body-parser": "^1.17.0",
+    "express": "^4.14.0",
+    "mongoose": "^4.8.4",
+    "node-inspector": "^0.12.8"
+  },
+  "devDependencies": {
+    "jsonwebtoken": "^7.3.0"
+  }
+}
